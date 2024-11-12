@@ -8,8 +8,7 @@ import Hardware_standard_ac_power_cable from "./assets/images/hardware_standard_
 import Hardware_standard_starlink_cable_gen3 from "./assets/images/hardware_standard_starlink_cable_gen3.webp"
 import Hardware_standard_power_supply_unit from "./assets/images/hardware_standard_power_supply_unit.webp"
 import React, { useEffect, useRef } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the CSS for the carousel
-import { Carousel } from "react-responsive-carousel";
+
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function App() {
