@@ -36,6 +36,12 @@ function App() {
       scrollRef.current.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
     }
   };
+  const handleOrderClick = () => {
+    window.parent.location.href = 'https://emartmall.mn/productdetail/2140057847000';
+  };
+  const viewPlanClick = () => {
+    window.parent.location.href = 'https://www.starlink.com/service-plans';
+  };
 
   return (
     <div className="w-full h-screen">
@@ -49,7 +55,7 @@ function App() {
           <div className="flex flex-col  text-white items-center  justify-between py-40 w-96 lg:w-full md:w-full">
             <div className="flex flex-col  items-center lg:gap-10 ">
               <h1 className="lg:text-7xl md:text-7xl text-3xl font-semibold lg:font-semibold md:font-bold font-roboto">
-                ROAM WITH aSTARLINK
+                ROAM WITH STARLINKs
               </h1>
               <div className="flex flex-col items-center">
                 <p className="lg:text-3xl md:text-2xl text-base">
@@ -61,11 +67,11 @@ function App() {
               </div>
             </div>
 
-            <a href="https://emartmall.mn/productdetail/2140057847000">
-              <button className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
+            {/* <a href="https://emartmall.mn/productdetail/2140057847000"> */}
+              <button onClick={handleOrderClick}  className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
                 Захиалах
               </button>
-            </a>
+            {/* </a> */}
           </div>
         </div>
       </div>
@@ -116,12 +122,12 @@ function App() {
                 *Сарын үйлчилгээний төлбөрийг доорх хэсгээс болон "Starlink"
                 апп-руу шууд хандан идэвхжүүлнэ.
               </p>
-              <a href="https://www.starlink.com/service-plans" className="">
-                <button className="bg-white/15 text-white  font-semibold py-2 px-2 md:py-3 md:px-4  lg:py-3 lg:px-7 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
+              {/* <a href="https://www.starlink.com/service-plans" className=""> */}
+                <button onClick={viewPlanClick} className="bg-white/15 text-white  font-semibold py-2 px-2 md:py-3 md:px-4  lg:py-3 lg:px-7 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
                   View plans
                   <FaChevronRight />
                 </button>
-              </a>
+              {/* </a> */}
             </div>
           </div>
         </div>
