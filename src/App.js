@@ -42,7 +42,25 @@ function App() {
   const viewPlanClick = () => {
     window.parent.location.href = 'https://www.starlink.com/service-plans';
   };
-
+  const activeGuideClick = () => {
+    window.parent.location.href = 'https://emartmall.mn/info/99';
+  };
+  const iosClick = () => {
+    window.parent.location.href = 'https://apps.apple.com/us/app/starlink/id1537177988';
+  };
+  const androiClick = () => {
+    window.parent.location.href = 'https://play.google.com/store/apps/details?id=com.starlink.mobile';
+  };
+  const zipcodeClick = () => {
+    window.parent.location.href = 'https://zipcode.mn/zipcode';
+  };
+  const specificationsClick = () => {
+    window.parent.location.href = 'https://www.starlink.com/specifications?spec=1';
+  };
+  const cableOrderClick = () => {
+    window.parent.location.href = 'https://emartmall.mn/productdetail/2140056356008';
+  };
+  
   return (
     <div className="w-full h-screen">
       <div
@@ -67,11 +85,11 @@ function App() {
               </div>
             </div>
 
-            {/* <a href="https://emartmall.mn/productdetail/2140057847000"> */}
+          
               <button onClick={handleOrderClick}  className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
                 Захиалах
               </button>
-            {/* </a> */}
+       
           </div>
         </div>
       </div>
@@ -122,12 +140,12 @@ function App() {
                 *Сарын үйлчилгээний төлбөрийг доорх хэсгээс болон "Starlink"
                 апп-руу шууд хандан идэвхжүүлнэ.
               </p>
-              {/* <a href="https://www.starlink.com/service-plans" className=""> */}
+       
                 <button onClick={viewPlanClick} className="bg-white/15 text-white  font-semibold py-2 px-2 md:py-3 md:px-4  lg:py-3 lg:px-7 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
                   View plans
                   <FaChevronRight />
                 </button>
-              {/* </a> */}
+
             </div>
           </div>
         </div>
@@ -151,11 +169,11 @@ function App() {
               явахад хялбар
             </p>
 
-            <a href="https://emartmall.mn/info/99">
-              <button className="w-full  bg-white text-black font-semibold py-3 px-10 lg:text-base rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm ">
+   
+              <button onClick={activeGuideClick} className="w-full  bg-white text-black font-semibold py-3 px-10 lg:text-base rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm ">
                 Идэвхжүүлэх заавар харах
               </button>
-            </a>
+      
           </div>
         </div>
       </div>
@@ -177,18 +195,18 @@ function App() {
             </p>
 
             <div className="flex gap-4">
-              <a href="https://apps.apple.com/us/app/starlink/id1537177988" className="">
-                <button className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
+       
+                <button onClick={iosClick} className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
                   DOWNLOAD FOR IOS
                   <FaChevronRight />
                 </button>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.starlink.mobile" className="">
-                <button className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
+       
+
+                <button onClick={androiClick} className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
                   DOWNLOAD FOR ANDROID
                   <FaChevronRight />
                 </button>
-              </a>
+   
             </div>
           </div>
           <img
@@ -217,12 +235,12 @@ function App() {
               суурилуулах зориулалттай.
             </p>
 
-            <a href="https://zipcode.mn/zipcode" className="">
-              <button className="bg-black/35 text-white  font-semibold py-2 px-3 md:py-4 md:px-5 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
+  
+              <button onClick={zipcodeClick} className="bg-black/35 text-white  font-semibold py-2 px-3 md:py-4 md:px-5 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
                 ZIPCODE харах
                 <FaChevronRight />
               </button>
-            </a>
+    
           </div>
         </div>
       </div>
@@ -244,12 +262,12 @@ function App() {
               шаардлагатай бүх зүйлтэй ирдэг.
             </p>
 
-            <a href="https://www.starlink.com/specifications?spec=1" className="">
-              <button className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm">
+     
+              <button onClick={specificationsClick} className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm">
                 VIEW SPECIFICATIONS
                 <FaChevronRight />
               </button>
-            </a>
+        
           </div>
           <div className="flex flex-col  text-white gap-4 w-80 md:w-4/5 lg:w-5/6  items-center rounded pb-32 md:pb-30">
             <div className="relative  w-80 md:w-4/5 lg:w-5/6  h-full " >
@@ -359,11 +377,11 @@ function App() {
               хурдны хязгааргүй Data-тай
             </p>
 
-            <a href="https://emartmall.mn/productdetail/2140057847000">
-              <button className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
+          
+              <button onClick={handleOrderClick} className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
                 Захиалах
               </button>
-            </a>
+         
           </div>
         </div>
       </div>
@@ -400,11 +418,9 @@ function App() {
               эсвэл LAN RJ45 кабелиар салаалж ашиглах боломжийг олгодог.
             </p>
 
-            <a href="https://emartmall.mn/productdetail/2140056356008">
-              <button className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
+              <button onClick={cableOrderClick} className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
                 Захиалах
               </button>
-            </a>
           </div>
         </div>
       </div>
