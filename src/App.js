@@ -49,7 +49,7 @@ function App() {
           <div className="flex flex-col  text-white items-center  justify-between py-40 w-96 lg:w-full md:w-full">
             <div className="flex flex-col  items-center lg:gap-10 ">
               <h1 className="lg:text-7xl md:text-7xl text-3xl font-semibold lg:font-semibold md:font-bold font-roboto">
-                ROAM WITH STARLINK
+                ROAM WITH aSTARLINK
               </h1>
               <div className="flex flex-col items-center">
                 <p className="lg:text-3xl md:text-2xl text-base">
