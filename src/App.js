@@ -134,7 +134,7 @@ function App() {
         w-full font-roboto"
       >
         <div className="flex h-auto pt-10 w-auto justify-end pr-6 md:pr-14 lg:pr-16">
-          <div className="flex flex-col  text-white gap-4 w-80 md:w-96 lg:w-2/6  bg-black/35 rounded  p-4 ">
+          <div className="flex flex-col  text-white gap-4 w-80 md:w-96 lg:w-2/6   rounded  p-4 ">
             <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold lg:font-semibold md:font-bold text-justify">
               АЛСЛАГДСАН ЗАЙНААС Ч АЖИЛЛА, ТОГЛО
             </h1>
