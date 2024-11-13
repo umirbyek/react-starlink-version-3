@@ -23,7 +23,10 @@ module.exports = {
         'sm-image-600': '43rem', // Default size
         'lg-image-600': '49rem', // Large screens
         'md-image-600': '48rem', //
-      }
+      },
+      fontFamily: {
+        roboto: ['Roboto', 'ui-sans-serif', 'system-ui'],
+      },
     },
   },
   plugins: [],
