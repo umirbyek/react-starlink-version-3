@@ -236,7 +236,7 @@ function App() {
             </p>
 
   
-              <button onClick={zipcodeClick} className="bg-black/35 text-white  font-semibold py-2 px-3 md:py-4 md:px-5 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
+              <button onClick={zipcodeClick} className="w-40 md:w-48 lg:w-56 bg-black/35 text-white  font-semibold py-2 px-3 md:py-4 md:px-5 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
                 ZIPCODE харах
                 <FaChevronRight />
               </button>
