@@ -146,7 +146,7 @@ function App() {
             </p>
 
             <a href="https://emartmall.mn/info/99">
-              <button className="bg-white text-black font-semibold py-3 px-10 lg:text-base rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-smitems-end">
+              <button className="w-full  bg-white text-black font-semibold py-3 px-10 lg:text-base rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm ">
                 Идэвхжүүлэх заавар харах
               </button>
             </a>
