@@ -343,7 +343,7 @@ function App() {
       >
         <div className="flex h-full  w-auto justify-start md:pl-14 lg:pl-16 pl-4 lg:items-center items-start pt-4 md:pt-10">
           <div className="flex flex-col  text-white gap-4 w-80 md:w-96 lg:w-2/6 ">
-            <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold lg:font-semibold md:font-bold text-justify">
+            <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold lg:font-semibold md:font-bold text-start">
               ЦАГ АГААРЫН ӨӨРЧЛӨЛТИЙГ ТЭСВЭРЛЭХ ЧАДВАРТАЙ
             </h1>
 
