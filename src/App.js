@@ -55,7 +55,7 @@ function App() {
     window.parent.location.href = 'https://zipcode.mn/zipcode';
   };
   const specificationsClick = () => {
-    window.parent.location.href = 'https://www.starlink.com/specifications?spec=1';
+    window.parent.location.href = 'https://www.starlink.com/specifications?spec=4';
   };
   const cableOrderClick = () => {
     window.parent.location.href = 'https://emartmall.mn/productdetail/2140056356008';
@@ -270,7 +270,7 @@ function App() {
         
           </div>
           <div className="flex flex-col  text-white gap-4 w-80 md:w-4/5 lg:w-5/6  items-center rounded pb-32 md:pb-30">
-            <div className="relative  w-80 md:w-4/5 lg:w-5/6  h-full " >
+            <div className="relative  w-96 md:w-4/5 lg:w-5/6  h-full " >
               {/* Left Button */}
               <button
                 onClick={scrollLeft}
