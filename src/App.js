@@ -37,7 +37,7 @@ function App() {
     }
   };
   const handleOrderClick = () => {
-    window.parent.location.href = 'https://emartmall.mn/productdetail/2140057847000';
+    window.parent.location.href = 'https://emartmall.mn/category?catid=782&lvl=1&wid=1281';
   };
   const viewPlanClick = () => {
     window.parent.location.href = 'https://www.starlink.com/service-plans';
