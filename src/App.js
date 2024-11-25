@@ -94,7 +94,7 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-cover bg-center bg-roam_illustriation1-image-lg h-sm-image-600 md:h-md-image-600 lg:h-lg-image-600 w-full font-roboto">
+      <div className="bg-cover bg-center bg-roam_illustriation1-image-lg bg-fixed h-sm-image-600 md:h-md-image-600 lg:h-lg-image-600 w-full font-roboto">
         <div className="w-full flex justify-center h-full">
           <div className="flex flex-col text-white items-center justify-center">
             <div className="flex flex-col items-center lg:gap-14 md:gap-10 gap-4">
@@ -179,7 +179,7 @@ function App() {
       </div>
 
       <div
-        className=" bg-cover bg-center
+        className=" bg-cover bg-center  bg-fixed
         bg-roam_illustriation2_d
         h-sm-image-600 md:h-md-image-600 lg:h-lg-image-600
         w-full font-roboto"
