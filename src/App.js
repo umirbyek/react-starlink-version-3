@@ -75,6 +75,9 @@ const specificationsClickMini=()=>{
   window.parent.location.href =
   "https://emartmall.mn/productdetail/2140058771007"; 
 }
+const handleOrderClickStarlinkMain=()=>{
+  window.parent.location.href="https://emartmall.mn/productdetail/2140057847000";
+}
   return (
     <div className="w-full h-screen">
       <div
@@ -450,7 +453,7 @@ const specificationsClickMini=()=>{
             </p>
 
             <button
-              onClick={handleOrderClick}
+              onClick={handleOrderClickStarlinkMain}
               className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end"
             >
               Захиалах
