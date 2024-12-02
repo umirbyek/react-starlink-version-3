@@ -198,12 +198,19 @@ const handleOrderClickStarlinkMain=()=>{
             <p className=" md:text-xl text-sm text-justify">
             It includes a built-in WiFi router, lower power consumption, DC power input, and max download speeds over 100 Mbps.
             </p>
-            <button
+            {/* <button
               onClick={specificationsClickMini}
-              className="w-52 md:w-64 bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm"
+              className="w-52 md:w-44  bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm"
             >
               Захиалах
-              <FaChevronRight />
+          
+            </button>
+             */}
+            <button
+              onClick={specificationsClickMini}
+              className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end"
+            >
+              Захиалах   
             </button>
           </div>
         </div>
@@ -464,7 +471,8 @@ const handleOrderClickStarlinkMain=()=>{
 
       <div
         className=" bg-cover bg-center
-        bg-black
+        bg-black bg-fixed
+        bg-roam_illustriation3_d bg-at
         h-sm-image-600 md:h-md-image-600 lg:h-lg-image-600
         w-full font-roboto"
       >

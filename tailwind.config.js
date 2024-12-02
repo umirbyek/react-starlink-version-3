@@ -20,7 +20,8 @@ module.exports = {
         'roam_b_weather_d': "url('./assets/images/roam_b_weather_d.webp')",
         'roam_b_feature1_d': "url('./assets/images/roam_b_feature1_d.webp')",
         'roam_b_feature1_m': "url('./assets/images/roam_b_feature1_m.webp')",
-   
+        'roam_illustriation3_d': "url('./assets/images/roam_illustriation3_d.webp')",
+        
       },
       height:{
         'sm-image-600': '43rem', // Default size
