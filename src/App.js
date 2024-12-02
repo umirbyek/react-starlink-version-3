@@ -89,14 +89,14 @@ const specificationsClickMini=()=>{
               <h1 className="lg:text-7xl md:text-7xl text-3xl font-semibold lg:font-semibold md:font-bold font-roboto">
                 ROAM WITH STARLINK
               </h1>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center gap-2">
                 <p className="lg:text-3xl md:text-2xl text-base">
                   Work and play at remote locations.
                 </p>
-                <p className="lg:text-3xl md:text-2xl text-base">
+                <p className="lg:text-3xl md:text-2xl text-base ">
                   Starlink Gen 3: 1,525,000₮
                 </p>
-                <p className="lg:text-3xl md:text-2xl text-base">
+                <p className="lg:text-3xl md:text-2xl text-base -mt-2">
                   Starlink Mini: 680,000₮
                 </p>
               </div>
