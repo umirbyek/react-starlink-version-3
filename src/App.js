@@ -202,7 +202,7 @@ const handleOrderClickStarlinkMain=()=>{
               onClick={specificationsClickMini}
               className="w-52 md:w-64 bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm"
             >
-              VIEW SPECIFICATIONS
+              Захиалах
               <FaChevronRight />
             </button>
           </div>
