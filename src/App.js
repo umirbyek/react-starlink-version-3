@@ -1,12 +1,12 @@
 // import { FaChevronRight } from "react-icons/fa";
 import Roam_b_install from "./assets/images/roam_b_install_m.webp";
 import Accessories_ethernet_adapter from "./assets/images/accessories_ethernet_adapter.webp";
-import Hardware_standard_dish from "./assets/images/hardware_standard_dish.webp"
-import Hardware_standard_kickstand from "./assets/images/hardware_standard_kickstand.webp"
-import Hardware_standard_router from "./assets/images/hardware_standard_router.webp"
-import Hardware_standard_ac_power_cable from "./assets/images/hardware_standard_ac_power_cable.webp"
-import Hardware_standard_starlink_cable_gen3 from "./assets/images/hardware_standard_starlink_cable_gen3.webp"
-import Hardware_standard_power_supply_unit from "./assets/images/hardware_standard_power_supply_unit.webp"
+import Hardware_standard_dish from "./assets/images/hardware_standard_dish.webp";
+import Hardware_standard_kickstand from "./assets/images/hardware_standard_kickstand.webp";
+import Hardware_standard_router from "./assets/images/hardware_standard_router.webp";
+import Hardware_standard_ac_power_cable from "./assets/images/hardware_standard_ac_power_cable.webp";
+import Hardware_standard_starlink_cable_gen3 from "./assets/images/hardware_standard_starlink_cable_gen3.webp";
+import Hardware_standard_power_supply_unit from "./assets/images/hardware_standard_power_supply_unit.webp";
 import React, { useEffect, useRef } from "react";
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -27,40 +27,54 @@ function App() {
 
   const scrollLeft = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
+      scrollRef.current.scrollBy({
+        left: -getScrollAmount(),
+        behavior: "smooth",
+      });
     }
   };
 
   const scrollRight = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
+      scrollRef.current.scrollBy({
+        left: getScrollAmount(),
+        behavior: "smooth",
+      });
     }
   };
   const handleOrderClick = () => {
-    window.parent.location.href = 'https://emartmall.mn/category?catid=782&lvl=1&wid=1281';
+    window.parent.location.href =
+      "https://emartmall.mn/category?catid=782&lvl=1&wid=1281";
   };
   const viewPlanClick = () => {
-    window.parent.location.href = 'https://www.starlink.com/service-plans';
+    window.parent.location.href = "https://www.starlink.com/service-plans";
   };
   const activeGuideClick = () => {
-    window.parent.location.href = 'https://emartmall.mn/info/99';
+    window.parent.location.href = "https://emartmall.mn/info/99";
   };
   const iosClick = () => {
-    window.parent.location.href = 'https://apps.apple.com/us/app/starlink/id1537177988';
+    window.parent.location.href =
+      "https://apps.apple.com/us/app/starlink/id1537177988";
   };
   const androiClick = () => {
-    window.parent.location.href = 'https://play.google.com/store/apps/details?id=com.starlink.mobile';
+    window.parent.location.href =
+      "https://play.google.com/store/apps/details?id=com.starlink.mobile";
   };
   const zipcodeClick = () => {
-    window.parent.location.href = 'https://zipcode.mn/zipcode';
+    window.parent.location.href = "https://zipcode.mn/zipcode";
   };
   const specificationsClick = () => {
-    window.parent.location.href = 'https://www.starlink.com/specifications?spec=4';
+    window.parent.location.href =
+      "https://www.starlink.com/specifications?spec=4";
   };
   const cableOrderClick = () => {
-    window.parent.location.href = 'https://emartmall.mn/productdetail/2140056356008';
+    window.parent.location.href =
+      "https://emartmall.mn/productdetail/2140056356008";
   };
-  
+const specificationsClickMini=()=>{
+  window.parent.location.href =
+  "https://emartmall.mn/productdetail/2140058771007"; 
+}
   return (
     <div className="w-full h-screen">
       <div
@@ -80,16 +94,20 @@ function App() {
                   Work and play at remote locations.
                 </p>
                 <p className="lg:text-3xl md:text-2xl text-base">
-                  Үндсэн үнэ: 1,525,000₮
+                  Starlink Gen 3: 1,525,000₮
+                </p>
+                <p className="lg:text-3xl md:text-2xl text-base">
+                  Starlink Mini: 680,000₮
                 </p>
               </div>
             </div>
 
-          
-              <button onClick={handleOrderClick}  className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
-                Захиалах
-              </button>
-       
+            <button
+              onClick={handleOrderClick}
+              className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end"
+            >
+              Захиалах
+            </button>
           </div>
         </div>
       </div>
@@ -115,7 +133,9 @@ function App() {
                     <p className="text-sm md:text-xl   mt-2">
                       Best for infrequent and individual travel with low usage
                     </p>
-                    <p className="md:text-4xl text-2xl  font-bold mt-4">MNT170,000</p>
+                    <p className="md:text-4xl text-2xl  font-bold mt-4">
+                      MNT170,000
+                    </p>
                     <p className="text-sm md:text-xl  mt-1">50 GB Roam Data</p>
                   </div>
                 </div>
@@ -124,15 +144,19 @@ function App() {
                   <div className="absolute inset-0 bg-slate-900/5  blur-sm  "></div>
                   <div className="relative">
                     <h2 className="md:text-3xl text-xl  font-semibold">
-                    ROAM
+                      ROAM
                       <br />
                       UNLIMITED
                     </h2>
                     <p className="text-sm md:text-xl  mt-2">
-                    Best for RVers, campers, travelers, and working on the go 
+                      Best for RVers, campers, travelers, and working on the go
                     </p>
-                    <p className="md:text-4xl text-2xl font-bold mt-4">MNT291,221 </p>
-                    <p className="text-sm md:text-xl   mt-1">Unlimited Roam Data</p>
+                    <p className="md:text-4xl text-2xl font-bold mt-4">
+                      MNT291,221{" "}
+                    </p>
+                    <p className="text-sm md:text-xl   mt-1">
+                      Unlimited Roam Data
+                    </p>
                   </div>
                 </div>
               </div>
@@ -140,17 +164,47 @@ function App() {
                 *Сарын үйлчилгээний төлбөрийг доорх хэсгээс болон "Starlink"
                 апп-руу шууд хандан идэвхжүүлнэ.
               </p>
-       
-                <button onClick={viewPlanClick} className="bg-white/15 text-white  font-semibold py-2 px-2 md:py-3 md:px-4  lg:py-3 lg:px-7 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
-                  View plans
-                  <FaChevronRight />
-                </button>
 
+              <button
+                onClick={viewPlanClick}
+                className="bg-white/15 text-white  font-semibold py-2 px-2 md:py-3 md:px-4  lg:py-3 lg:px-7 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm"
+              >
+                View plans
+                <FaChevronRight />
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <div
+        className=" bg-cover bg-center
+        bg-roam_b_feature1_m md:bg-roam_b_feature1_d lg:bg-roam_b_feature1_d
+        h-sm-image-600 md:h-md-image-600 lg:h-lg-image-600
+        w-full font-roboto"
+      >
+        <div className="flex h-auto pt-10 w-auto justify-end pr-6 md:pr-14 lg:pr-16">
+          <div className="flex flex-col  text-white gap-4 w-80 md:w-96 lg:w-2/6   rounded  p-4 ">
+            <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold lg:font-semibold md:font-bold text-justify">
+            STARLINK MINI
+            </h1>
 
+            <p className="md:text-xl text-sm text-justify">
+            Starlink Mini is a compact, portable kit that can easily fit in a backpack, designed to provide high-speed, low-latency internet on the go.
+            </p>
+
+            <p className=" md:text-xl text-sm text-justify">
+            It includes a built-in WiFi router, lower power consumption, DC power input, and max download speeds over 100 Mbps.
+            </p>
+            <button
+              onClick={specificationsClickMini}
+              className="w-52 md:w-64 bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm"
+            >
+              VIEW SPECIFICATIONS
+              <FaChevronRight />
+            </button>
+          </div>
+        </div>
+      </div>
       <div
         className=" bg-cover bg-center
         bg-roam_c_feature5_m-image-md md:roam_c_feature5_m-image-md lg:bg-roam_c_feature5_d-image-lg
@@ -169,11 +223,12 @@ function App() {
               явахад хялбар
             </p>
 
-   
-              <button onClick={activeGuideClick} className="w-full  bg-white text-black font-semibold py-3 px-10 lg:text-base rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm ">
-                Идэвхжүүлэх заавар харах
-              </button>
-      
+            <button
+              onClick={activeGuideClick}
+              className="w-full  bg-white text-black font-semibold py-3 px-10 lg:text-base rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm "
+            >
+              Идэвхжүүлэх заавар харах
+            </button>
           </div>
         </div>
       </div>
@@ -195,18 +250,21 @@ function App() {
             </p>
 
             <div className="flex gap-4">
-       
-                <button onClick={iosClick} className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
-                  DOWNLOAD FOR IOS
-                  <FaChevronRight />
-                </button>
-       
+              <button
+                onClick={iosClick}
+                className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm"
+              >
+                DOWNLOAD FOR IOS
+                <FaChevronRight />
+              </button>
 
-                <button onClick={androiClick} className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
-                  DOWNLOAD FOR ANDROID
-                  <FaChevronRight />
-                </button>
-   
+              <button
+                onClick={androiClick}
+                className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm"
+              >
+                DOWNLOAD FOR ANDROID
+                <FaChevronRight />
+              </button>
             </div>
           </div>
           <img
@@ -235,12 +293,13 @@ function App() {
               суурилуулах зориулалттай.
             </p>
 
-  
-              <button onClick={zipcodeClick} className="w-40 md:w-48 lg:w-56 bg-black/35 text-white  font-semibold py-2 px-3 md:py-4 md:px-5 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm">
-                ZIPCODE харах
-                <FaChevronRight />
-              </button>
-    
+            <button
+              onClick={zipcodeClick}
+              className="w-40 md:w-48 lg:w-56 bg-black/35 text-white  font-semibold py-2 px-3 md:py-4 md:px-5 lg:py-4 lg:px-6 rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-lg md:text-base text-sm"
+            >
+              ZIPCODE харах
+              <FaChevronRight />
+            </button>
           </div>
         </div>
       </div>
@@ -262,15 +321,16 @@ function App() {
               шаардлагатай бүх зүйлтэй ирдэг.
             </p>
 
-     
-              <button onClick={specificationsClick} className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm">
-                VIEW SPECIFICATIONS
-                <FaChevronRight />
-              </button>
-        
+            <button
+              onClick={specificationsClick}
+              className="bg-white/15 text-white  font-semibold py-2 px-3 md:py-4 md:px-4 lg:py-4 lg:px-6  rounded hover:bg-black/90  transition duration-500 border border-white flex items-center gap-2 lg:text-base md:text-sm text-sm"
+            >
+              VIEW SPECIFICATIONS
+              <FaChevronRight />
+            </button>
           </div>
           <div className="flex flex-col  text-white gap-4 w-80 md:w-4/5 lg:w-5/6  items-center rounded pb-32 md:pb-30">
-            <div className="relative  w-96 md:w-4/5 lg:w-5/6  h-full " >
+            <div className="relative  w-96 md:w-4/5 lg:w-5/6  h-full ">
               {/* Left Button */}
               <button
                 onClick={scrollLeft}
@@ -290,49 +350,61 @@ function App() {
                     alt="Starlink"
                     className="h-40 w-40 md:h-44 md:w-44  lg:h-48 lg:w-48 max-w-none"
                   />
-                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">STARLINK</p>
+                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">
+                    STARLINK
+                  </p>
                 </div>
                 <div className="flex flex-col items-center text-white">
                   <img
-                      src={Hardware_standard_kickstand}
+                    src={Hardware_standard_kickstand}
                     alt="Kickstand"
-                className="h-40 w-40 md:h-44 md:w-44  lg:h-48 lg:w-48 max-w-none"
+                    className="h-40 w-40 md:h-44 md:w-44  lg:h-48 lg:w-48 max-w-none"
                   />
-                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">KICKSTAND</p>
+                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">
+                    KICKSTAND
+                  </p>
                 </div>
                 <div className="flex flex-col items-center text-white ">
                   <img
-                     src={Hardware_standard_router}
+                    src={Hardware_standard_router}
                     alt="Gen 3 Router"
                     className="h-40 w-40 md:h-44 md:w-44  lg:h-48 lg:w-48 max-w-none"
                   />
-                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">GEN 3 ROUTER</p>
+                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">
+                    GEN 3 ROUTER
+                  </p>
                 </div>
-                
+
                 <div className="flex flex-col items-center text-white ">
                   <img
-                      src={Hardware_standard_starlink_cable_gen3}
+                    src={Hardware_standard_starlink_cable_gen3}
                     alt="Starlink"
                     className="h-40 w-40 md:h-44 md:w-44  lg:h-48 lg:w-48 max-w-none"
                   />
-                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">STARLINK CALBE</p>
+                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">
+                    STARLINK CALBE
+                  </p>
                 </div>
-             
+
                 <div className="flex flex-col items-center text-white ">
                   <img
-                       src={Hardware_standard_ac_power_cable}
+                    src={Hardware_standard_ac_power_cable}
                     alt="Kickstand"
                     className="h-40 w-40 md:h-44 md:w-44  lg:h-48 lg:w-48 max-w-none"
                   />
-                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">AC CABLE</p>
+                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">
+                    AC CABLE
+                  </p>
                 </div>
                 <div className="flex flex-col items-center text-white ">
                   <img
-                      src={Hardware_standard_power_supply_unit}
+                    src={Hardware_standard_power_supply_unit}
                     alt="Gen 3 Router"
                     className="h-40 w-40 md:h-44 md:w-44  lg:h-48 lg:w-48 max-w-none"
                   />
-                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">POWER SUPPLY</p>
+                  <p className="mt-2 lg:text-2xl md:text-xl text-sm text-justify">
+                    POWER SUPPLY
+                  </p>
                 </div>
                 {/* Add more items as needed */}
               </div>
@@ -377,11 +449,12 @@ function App() {
               хурдны хязгааргүй Data-тай
             </p>
 
-          
-              <button onClick={handleOrderClick} className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
-                Захиалах
-              </button>
-         
+            <button
+              onClick={handleOrderClick}
+              className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end"
+            >
+              Захиалах
+            </button>
           </div>
         </div>
       </div>
@@ -418,9 +491,12 @@ function App() {
               эсвэл LAN RJ45 кабелиар салаалж ашиглах боломжийг олгодог.
             </p>
 
-              <button onClick={cableOrderClick} className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end">
-                Захиалах
-              </button>
+            <button
+              onClick={cableOrderClick}
+              className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end"
+            >
+              Захиалах
+            </button>
           </div>
         </div>
       </div>
