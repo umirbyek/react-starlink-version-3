@@ -70,21 +70,19 @@ function App() {
   // };
   const handleOrderClick = () => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    const iframe = document.createElement('iframe');
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.frameBorder = "0";
   
-    // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+    // SKU код, үүнийг зөв барааны мэдээлэлтэй холбох хэрэгтэй
+    const skuCode = "2140057847000";
+  
     if (/android/i.test(userAgent)) {
-      iframe.src = "emartmn://productdetail/2140056356008"; // Android-ийн апп линк
-      document.body.appendChild(iframe);
+      // Android төхөөрөмж дээр аппликэйшний линк ашиглах
+      window.location.href = `intent://productdetail/${skuCode}#Intent;scheme=emartmn;package=com.emartmn.app;end`;
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      iframe.src = "emartmn://productdetail/2140056356008"; // iOS-ийн апп линк
-      document.body.appendChild(iframe);
+      // iOS төхөөрөмж дээр аппликэйшний линк ашиглах
+      window.location.href = `emartmn://productdetail/${skuCode}`;
     } else {
       // Вэб хуудасны линк ашиглах
-      window.parent.location.href = "https://emartmall.mn/productdetail/2140056356008";
+      window.parent.location.href = `https://emartmall.mn/productdetail/${skuCode}`;
     }
   };
   
