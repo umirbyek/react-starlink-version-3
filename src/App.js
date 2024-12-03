@@ -47,26 +47,24 @@ function App() {
   //     "https://emartmall.mn/category?catid=782&lvl=1&wid=1281";
   // };
   const handleOrderClick = () => {
-    // const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    // // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
-    // if (/android/i.test(userAgent)) {
-    //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // Android-ийн апп линк
-    // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // iOS-ийн апп линк
-    // } else {
-    //   // Вэб хуудасны линк ашиглах
-    //   window.parent.location.href = "https://emartmall.mn/bg?catid=782";
-    // }
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
-  if (/android/i.test(userAgent)) {
-    window.parent.location.href = "emartmn://productdetail/2140057847000"; // Android-ийн апп линк, барааны SKU код бүхий
-  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.parent.location.href = "emartmn://productdetail/2140057847000"; // iOS-ийн апп линк, барааны SKU код бүхий
-  } else {
-    // Вэб хуудасны линк ашиглах
-    window.parent.location.href = "https://emartmall.mn/bg?catid=782";
-  }
+    const iframe = document.createElement('iframe');
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.frameBorder = "0";
+  
+    // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+    if (/android/i.test(userAgent)) {
+      iframe.src = "emartmn://productdetail/2140056356008"; // Android-ийн апп линк
+      document.body.appendChild(iframe);
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      iframe.src = "emartmn://productdetail/2140056356008"; // iOS-ийн апп линк
+      document.body.appendChild(iframe);
+    } else {
+      // Вэб хуудасны линк ашиглах
+      window.parent.location.href = "https://emartmall.mn/bg?catid=782";
+    }
+  };
   };
   const viewPlanClick = () => {
     window.parent.location.href = "https://www.starlink.com/service-plans";
