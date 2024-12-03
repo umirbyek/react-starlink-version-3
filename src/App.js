@@ -55,7 +55,7 @@ function App() {
       window.parent.location.href = "/bg?catid=782"; // iOS-ийн апп линк
     } else {
       // Вэб хуудасны линк ашиглах
-      window.parent.location.href = "https://emartmall.mn/productdetail/2140057847000";
+      window.parent.location.href = "https://emartmall.mn/bg?catid=782";
     }
   };
   const viewPlanClick = () => {
