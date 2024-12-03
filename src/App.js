@@ -50,9 +50,9 @@ function App() {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
     if (/android/i.test(userAgent)) {
-      window.parent.location.href = "/bg?catid=782"; // Android-ийн апп линк
+      window.parent.location.href = "emartmn://productdetail/{skucd}"; // Android-ийн апп линк
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.parent.location.href = "/bg?catid=782"; // iOS-ийн апп линк
+      window.parent.location.href = "emartmn://productdetail/{skucd}"; // iOS-ийн апп линк
     } else {
       // Вэб хуудасны линк ашиглах
       window.parent.location.href = "https://emartmall.mn/bg?catid=782";
