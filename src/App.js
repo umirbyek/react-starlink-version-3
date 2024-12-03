@@ -51,7 +51,7 @@ function App() {
     const iframe = document.createElement('iframe');
     iframe.style.width = "100%";
     iframe.style.height = "100%";
-    iframe.frameBorder = "0";
+ 
   
     // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
     if (/android/i.test(userAgent)) {
