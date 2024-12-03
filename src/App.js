@@ -42,9 +42,21 @@ function App() {
       });
     }
   };
+  // const handleOrderClick = () => {
+  //   window.parent.location.href =
+  //     "https://emartmall.mn/category?catid=782&lvl=1&wid=1281";
+  // };
   const handleOrderClick = () => {
-    window.parent.location.href =
-      "https://emartmall.mn/category?catid=782&lvl=1&wid=1281";
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+    if (/android/i.test(userAgent)) {
+      window.location.href = "/productdetail/2140058771007"; // Android-ийн апп линк
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.location.href = "/productdetail/2140058771007"; // iOS-ийн апп линк
+    } else {
+      // Вэб хуудасны линк ашиглах
+      window.location.href = "https://emartmall.mn/productdetail/2140057847000";
+    }
   };
   const viewPlanClick = () => {
     window.parent.location.href = "https://www.starlink.com/service-plans";
@@ -124,6 +136,26 @@ const handleOrderClickStarlinkMain=()=>{
               </h1>
 
               <div className="flex lg:flex-row md:flex-row flex-col gap-8">
+              <div className="relative text-center p-6 rounded-lg shadow-lg border border-white/20 lg:w-96 w-80 ">
+                  <div className="absolute inset-0 bg-slate-900/5  blur-sm  "></div>
+                  <div className="relative">
+                    <h2 className="md:text-3xl text-xl  font-semibold">
+                  RESIDENTIAL
+                
+                    </h2>
+                    <p className="text-sm md:text-xl  mt-2">
+                      Best for households
+                    </p>
+                    <p className="md:text-4xl text-2xl font-bold mt-4">
+                      MNT118,000
+                    </p>
+                    <p className="text-sm md:text-xl   mt-1">
+                      Unlimited Roam Data
+                      <br/>
+                      Fixed Location
+                    </p>
+                  </div>
+                </div>
                 <div className="relative text-center p-6 rounded-lg shadow-lg border border-white/20 lg:w-96 w-80 ">
                   {/* <div className="absolute inset-0 bg-white/5 blur-3xl rounded-lg"></div> */}
                   <div className="absolute inset-0   bg-slate-900/5  "></div>
@@ -143,25 +175,7 @@ const handleOrderClickStarlinkMain=()=>{
                   </div>
                 </div>
 
-                <div className="relative text-center p-6 rounded-lg shadow-lg border border-white/20 lg:w-96 w-80 ">
-                  <div className="absolute inset-0 bg-slate-900/5  blur-sm  "></div>
-                  <div className="relative">
-                    <h2 className="md:text-3xl text-xl  font-semibold">
-                      ROAM
-                      <br />
-                      UNLIMITED
-                    </h2>
-                    <p className="text-sm md:text-xl  mt-2">
-                      Best for RVers, campers, travelers, and working on the go
-                    </p>
-                    <p className="md:text-4xl text-2xl font-bold mt-4">
-                      MNT291,221{" "}
-                    </p>
-                    <p className="text-sm md:text-xl   mt-1">
-                      Unlimited Roam Data
-                    </p>
-                  </div>
-                </div>
+           
               </div>
               <p className="text-sm md:text-xl  lg:w-auto md:w-auto w-80 text-center">
                 *Сарын үйлчилгээний төлбөрийг доорх хэсгээс болон "Starlink"
