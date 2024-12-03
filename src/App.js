@@ -60,9 +60,9 @@ function App() {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
   // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
   if (/android/i.test(userAgent)) {
-    window.parent.location.href = "emartmn://productdetail/2140056356008"; // Android-ийн апп линк, барааны SKU код бүхий
+    window.parent.location.href = "emartmn://productdetail/2140057847000"; // Android-ийн апп линк, барааны SKU код бүхий
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.parent.location.href = "emartmn://productdetail/2140056356008"; // iOS-ийн апп линк, барааны SKU код бүхий
+    window.parent.location.href = "emartmn://productdetail/2140057847000"; // iOS-ийн апп линк, барааны SKU код бүхий
   } else {
     // Вэб хуудасны линк ашиглах
     window.parent.location.href = "https://emartmall.mn/bg?catid=782";
@@ -112,7 +112,7 @@ const handleOrderClickStarlinkMain=()=>{
           <div className="flex flex-col  text-white items-center  justify-between py-40 w-96 lg:w-full md:w-full">
             <div className="flex flex-col  items-center lg:gap-10 ">
               <h1 className="lg:text-7xl md:text-7xl text-3xl font-semibold lg:font-semibold md:font-bold font-roboto">
-                ROAM WITH STARLINK U
+                ROAM WITH STARLINK 
               </h1>
               <div className="flex flex-col items-center gap-2">
                 <p className="lg:text-3xl md:text-2xl text-base">
