@@ -46,19 +46,27 @@ function App() {
   //   window.parent.location.href =
   //     "https://emartmall.mn/category?catid=782&lvl=1&wid=1281";
   // };
-  const handleOrderClick = (skuCode) => {
+  const handleOrderClick = () => {
+    // const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+    // if (/android/i.test(userAgent)) {
+    //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // Android-ийн апп линк
+    // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // iOS-ийн апп линк
+    // } else {
+    //   // Вэб хуудасны линк ашиглах
+    //   window.parent.location.href = "https://emartmall.mn/bg?catid=782";
+    // }
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    // Device check code: Check for iOS and Android
-    if (/android/i.test(userAgent)) {
-      // Android app link with SKU code
-      window.parent.location.href = `emartmn://productdetail/${skuCode}`;
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      // iOS app link with SKU code
-      window.parent.location.href = `emartmn://productdetail/${skuCode}`;
-    } else {
-      // Use web page link
-      window.parent.location.href = `https://emartmall.mn/bg?catid=782`;
-    }
+  // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+  if (/android/i.test(userAgent)) {
+    window.parent.location.href = "emartmn://productdetail/{2140058771007}"; // Android-ийн апп линк, барааны SKU код бүхий
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.parent.location.href = "emartmn://productdetail"; // iOS-ийн апп линк, барааны SKU код бүхий
+  } else {
+    // Вэб хуудасны линк ашиглах
+    window.parent.location.href = "https://emartmall.mn/bg?catid=782";
+  }
   };
   
   const viewPlanClick = () => {
@@ -121,7 +129,7 @@ const handleOrderClickStarlinkMain=()=>{
             </div>
 
             <button
-           onClick={() => handleOrderClick('bg?catid=782')}
+              onClick={handleOrderClick}
               className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end"
             >
               Захиалах
