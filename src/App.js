@@ -121,7 +121,7 @@ const handleOrderClickStarlinkMain=()=>{
             </div>
 
             <button
-              onClick={handleOrderClick}
+           onClick={() => handleOrderClick('2140056356008')}
               className="bg-white text-black font-semibold py-3 px-20 rounded hover:bg-[#ffa500] transition duration-500 lg:text-lg md:text-base text-sm items-end"
             >
               Захиалах
