@@ -97,8 +97,21 @@ console.log('Attempting to redirect to:', window.parent.location.href);
       "https://emartmall.mn/productdetail/2140056356008";
   };
 const specificationsClickMini=()=>{
-  window.parent.location.href =
-  "https://emartmall.mn/productdetail/2140058771007"; 
+
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+  if (/android/i.test(userAgent)) {
+    window.parent.location.href = "emartmn://productdetail?skucd=2140058771007"; // Android-ийн апп линк, барааны SKU код бүхий
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.parent.location.href = "emartmn://productdetail?skucd=2140058771007"; // iOS-ийн апп линк, барааны SKU код бүхий
+    console.log('User Agent:', userAgent);
+console.log('Attempting to redirect to:', window.parent.location.href);
+  } else {
+    // Вэб хуудасны линк ашиглах
+    window.parent.location.href="https://emartmall.mn/productdetail/2140058771007";
+  }
+  // window.parent.location.href =
+  // "https://emartmall.mn/productdetail/2140058771007"; 
 }
 const handleOrderClickStarlinkMain=()=>{
 
