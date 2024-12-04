@@ -46,44 +46,27 @@ function App() {
   //   window.parent.location.href =
   //     "https://emartmall.mn/category?catid=782&lvl=1&wid=1281";
   // };
-  // const handleOrderClick = () => {
-  //   // const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  //   // // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
-  //   // if (/android/i.test(userAgent)) {
-  //   //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // Android-ийн апп линк
-  //   // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-  //   //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // iOS-ийн апп линк
-  //   // } else {
-  //   //   // Вэб хуудасны линк ашиглах
-  //   //   window.parent.location.href = "https://emartmall.mn/bg?catid=782";
-  //   // }
-  //   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  // // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
-  // if (/android/i.test(userAgent)) {
-  //   window.parent.location.href = "emartmn://productdetail/2140057847000"; // Android-ийн апп линк, барааны SKU код бүхий
-  // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-  //   window.parent.location.href = "emartmn://productdetail/2140057847000"; // iOS-ийн апп линк, барааны SKU код бүхий
-  // } else {
-  //   // Вэб хуудасны линк ашиглах
-  //   window.parent.location.href = "https://emartmall.mn/bg?catid=782";
-  // }
-  // };
   const handleOrderClick = () => {
+    // const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+    // if (/android/i.test(userAgent)) {
+    //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // Android-ийн апп линк
+    // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    //   window.parent.location.href = "emartmn://productdetail/{skucd}"; // iOS-ийн апп линк
+    // } else {
+    //   // Вэб хуудасны линк ашиглах
+    //   window.parent.location.href = "https://emartmall.mn/bg?catid=782";
+    // }
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  
-    // SKU код, үүнийг зөв барааны мэдээлэлтэй холбох хэрэгтэй
-    const skuCode = "2140057847000";
-  
-    if (/android/i.test(userAgent)) {
-      // Android төхөөрөмж дээр аппликэйшний линк ашиглах
-      window.location.href = `intent://productdetail/${skuCode}#Intent;scheme=emartmn;package=com.emartmn.app;end`;
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      // iOS төхөөрөмж дээр аппликэйшний линк ашиглах
-      window.location.href = `emartmn://productdetail/${skuCode}`;
-    } else {
-      // Вэб хуудасны линк ашиглах
-      window.parent.location.href = `https://emartmall.mn/productdetail/${skuCode}`;
-    }
+  // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+  if (/android/i.test(userAgent)) {
+    window.parent.location.href = "emartmn://productdetail"; // Android-ийн апп линк, барааны SKU код бүхий
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.parent.location.href = "emartmn://productdetail"; // iOS-ийн апп линк, барааны SKU код бүхий
+  } else {
+    // Вэб хуудасны линк ашиглах
+    window.parent.location.href = "https://emartmall.mn/bg?catid=782";
+  }
   };
   
   const viewPlanClick = () => {
