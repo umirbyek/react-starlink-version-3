@@ -75,7 +75,21 @@ console.log('Attempting to redirect to:', window.parent.location.href);
     window.parent.location.href = "https://www.starlink.com/service-plans";
   };
   const activeGuideClick = () => {
+
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
+  if (/android/i.test(userAgent)) {
+    window.parent.location.href = "emartmn://productdetail?skucd=info/99"; // Android-ийн апп линк, барааны SKU код бүхий
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.parent.location.href = "emartmn://productdetail?skucd=info/99"; // iOS-ийн апп линк, барааны SKU код бүхий
+    console.log('User Agent:', userAgent);
+console.log('Attempting to redirect to:', window.parent.location.href);
+  } else {
+    // Вэб хуудасны линк ашиглах
     window.parent.location.href = "https://emartmall.mn/info/99";
+  }
+    
+    // window.parent.location.href = "https://emartmall.mn/info/99";
   };
   const iosClick = () => {
     window.parent.location.href =
@@ -232,6 +246,7 @@ console.log('Attempting to redirect to:', window.parent.location.href);
           </div>
         </div>
       </div>
+
       <div
         className=" bg-cover bg-center
         bg-roam_b_feature1_m md:bg-roam_b_feature1_d lg:bg-roam_b_feature1_d
@@ -268,6 +283,7 @@ console.log('Attempting to redirect to:', window.parent.location.href);
           </div>
         </div>
       </div>
+
       <div
         className=" bg-cover bg-center
         bg-roam_c_feature5_m-image-md md:roam_c_feature5_m-image-md lg:bg-roam_c_feature5_d-image-lg
