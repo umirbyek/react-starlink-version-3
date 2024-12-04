@@ -62,7 +62,7 @@ function App() {
   if (/android/i.test(userAgent)) {
     window.parent.location.href = "emartmn://productdetail/{2140058771007}"; // Android-ийн апп линк, барааны SKU код бүхий
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.parent.location.href = "emartmn://productdetail"; // iOS-ийн апп линк, барааны SKU код бүхий
+    window.parent.location.href = "emartmn://productdetail/bg?catid=782"; // iOS-ийн апп линк, барааны SKU код бүхий
   } else {
     // Вэб хуудасны линк ашиглах
     window.parent.location.href = "https://emartmall.mn/bg?catid=782";
