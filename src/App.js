@@ -63,8 +63,7 @@ function App() {
     window.parent.location.href = "emartmn://productdetail?skucd=2140057847000"; // Android-ийн апп линк, барааны SKU код бүхий
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
     window.parent.location.href = "emartmn://productdetail?skucd=2140057847000"; // iOS-ийн апп линк, барааны SKU код бүхий
-    console.log('User Agent:', userAgent);
-console.log('Attempting to redirect to:', window.parent.location.href);
+
   } else {
     // Вэб хуудасны линк ашиглах
     window.parent.location.href = "https://emartmall.mn/bg?catid=782";
@@ -82,8 +81,7 @@ console.log('Attempting to redirect to:', window.parent.location.href);
     window.parent.location.href = "emartmn://info?skucd=99"; // Android-ийн апп линк, барааны SKU код бүхий
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
     window.parent.location.href = "emartmn://info?skucd=99"; // iOS-ийн апп линк, барааны SKU код бүхий
-    console.log('User Agent:', userAgent);
-console.log('Attempting to redirect to:', window.parent.location.href);
+
   } else {
     // Вэб хуудасны линк ашиглах
     window.parent.location.href = "https://emartmall.mn/info/99";
@@ -115,8 +113,7 @@ console.log('Attempting to redirect to:', window.parent.location.href);
       window.parent.location.href = "emartmn://productdetail?skucd=2140056356008"; // Android-ийн апп линк, барааны SKU код бүхий
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       window.parent.location.href = "emartmn://productdetail?skucd=2140056356008"; // iOS-ийн апп линк, барааны SKU код бүхий
-      console.log('User Agent:', userAgent);
-  console.log('Attempting to redirect to:', window.parent.location.href);
+   
     } else {
       // Вэб хуудасны линк ашиглах
       window.parent.location.href = "https://emartmall.mn/productdetail/2140056356008";
@@ -131,8 +128,7 @@ const specificationsClickMini=()=>{
     window.parent.location.href = "emartmn://productdetail?skucd=2140058771007"; // Android-ийн апп линк, барааны SKU код бүхий
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
     window.parent.location.href = "emartmn://productdetail?skucd=2140058771007"; // iOS-ийн апп линк, барааны SKU код бүхий
-    console.log('User Agent:', userAgent);
-console.log('Attempting to redirect to:', window.parent.location.href);
+
   } else {
     // Вэб хуудасны линк ашиглах
     window.parent.location.href="https://emartmall.mn/productdetail/2140058771007";
@@ -148,8 +144,7 @@ const handleOrderClickStarlinkMain=()=>{
     window.parent.location.href = "emartmn://productdetail?skucd=2140057847000"; // Android-ийн апп линк, барааны SKU код бүхий
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
     window.parent.location.href = "emartmn://productdetail?skucd=2140057847000"; // iOS-ийн апп линк, барааны SKU код бүхий
-    console.log('User Agent:', userAgent);
-console.log('Attempting to redirect to:', window.parent.location.href);
+  
   } else {
     // Вэб хуудасны линк ашиглах
     window.parent.location.href="https://emartmall.mn/productdetail/2140057847000";
