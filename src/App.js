@@ -197,7 +197,7 @@ const handleOrderClickStarlinkMain=()=>{
               </h1>
 
               <div className="flex lg:flex-row md:flex-row flex-col gap-8">
-              <div className="relative text-center p-6 rounded-lg shadow-lg border border-white/20 lg:w-96 w-80 ">
+              <div className="relative text-center p-6 rounded-lg shadow-lg border border-white/20 lg:w-96 w-80 backdrop-blur-[2px]">
                   <div className="absolute inset-0 bg-slate-900/5  blur-sm  "></div>
                   <div className="relative">
                     <h2 className="md:text-3xl text-xl  font-semibold">
@@ -217,7 +217,7 @@ const handleOrderClickStarlinkMain=()=>{
                     </p>
                   </div>
                 </div>
-                <div className="relative text-center p-6 rounded-lg shadow-lg border border-white/20 lg:w-96 w-80 ">
+                <div className="relative text-center p-6 rounded-lg shadow-lg border border-white/20 lg:w-96 w-80 backdrop-blur-[2px]">
                   {/* <div className="absolute inset-0 bg-white/5 blur-3xl rounded-lg"></div> */}
                   <div className="absolute inset-0   bg-slate-900/5  "></div>
                   <div className="relative">
