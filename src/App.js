@@ -78,9 +78,9 @@ function App() {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
   // Төхөөрөмжийг шалгах код: iOS болон Android-ийг шалгах
   if (/android/i.test(userAgent)) {
-    window.parent.location.href = "emartmn://info?skucd=99"; // Android-ийн апп линк, барааны SKU код бүхий
+    window.parent.location.href = "https://emartmall.mn/info/99"; // Android-ийн апп линк, барааны SKU код бүхий
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.parent.location.href = "emartmn://info?skucd=99"; // iOS-ийн апп линк, барааны SKU код бүхий
+    window.parent.location.href = "https://emartmall.mn/info/99"; // iOS-ийн апп линк, барааны SKU код бүхий
 
   } else {
     // Вэб хуудасны линк ашиглах
