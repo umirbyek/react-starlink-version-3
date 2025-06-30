@@ -174,6 +174,7 @@ const handleOrderClickStarlinkMain=()=>{
                 </p>
                 <p className="lg:text-3xl md:text-2xl text-base -mt-2">
                Starlink Mini /Pre order/: 680,000₮
+               
                 </p>
               </div>
             </div>
