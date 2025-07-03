@@ -34,7 +34,7 @@ function App() {
     }
   };
 
-  
+
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
@@ -174,7 +174,7 @@ const handleOrderClickStarlinkMain=()=>{
                   Starlink Gen 3: 1,525,000₮
                 </p>
                 <p className="lg:text-3xl md:text-2xl text-base -mt-2">
-                  Starlink Mini: 680,000₮
+                 Starlink Mini /Pre order/: 680,000₮
                 </p>
               </div>
             </div>
