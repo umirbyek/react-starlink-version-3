@@ -34,6 +34,7 @@ function App() {
     }
   };
 
+  
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
